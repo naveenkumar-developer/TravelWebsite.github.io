@@ -1,0 +1,249 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    cursor: pointer;
+}
+.main_heading {
+    color: orangered;
+    font-size: 1.3rem;
+    display: grid;
+    place-content: center;
+}
+
+.toggle_btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 50px;
+    height: 60px;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.toggle_bar {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 5px;
+}
+
+.nav_links {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li {
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    list-style-type: none;
+
+}
+
+.nav_links li a {
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+.nav_links li a:hover {
+    color: whitesmoke;
+    scale: 1.1;
+    transition-property: scale;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.dropdown_links {
+    display: none;
+    background-color: whitesmoke;
+}
+
+.dropdown_links li {
+    list-style-type: none;
+}
+
+.dropdown_links li a {
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown_links li:active {
+    background-color: orange;
+}
+
+@media all and (max-width:600px) {
+    .nav_links {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: flex;
+    }
+
+    .dropdown_links.active {
+        display: block;
+        text-align: center;
+        line-height: 3.0;
+        transition-property: line-height;
+        transition-duration: 4s;
+        transition-delay: 1s;
+        z-index: 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+    }
+
+}
+
+.parentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    padding: 20px 0 10px 0;
+min-height: 500px;
+}
+
+.div_container {
+    width: 30%;
+}
+
+.summerSessionCard_container {
+    background-color: gainsboro;
+    width: 70%;
+}
+
+.summerSessionCard_containerHeading {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.summerSessionCard_containerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+    padding: 10px 0 10px 0;
+}
+
+/* BEST TOURIST PLACE TO VISIT IN SUMMER  */
+
+.placeCardContainer {
+    height: 400px;
+    width: 18.75rem;
+    box-shadow: 0px 0px 5px 5px rgb(120, 118, 118);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.placeCardContainer img {
+    height: 70%;
+    width: 100%;
+}
+
+.placeNameAndPrice {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* MAIN-CONTENT STYLES  */
+
+
+/* TRAVEL PLACES CARDS  */
+.trip_ideaCards_container {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border: none;
+  
+    row-gap: 1.5rem;
+    align-items: center;
+   
+}
+.trip_idea_heading{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+.trip_ideaCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    row-gap: 2rem;
+}
+a{
+    color: black;
+}
+
+/* // CARD DATA  */
+.card_container {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 3px whitesmoke;
+    overflow: hidden;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.card_image {
+    width: 50%;
+}
+
+.card_content {
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+footer{
+    
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
